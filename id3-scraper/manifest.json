@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "3D Model Finder for IKEA",
+  "description": "Find and list .glb 3D models on IKEA product pages.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "tabs",
+	"storage",
+	"scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Find 3D Models"
+  }
+}
